@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C6BF3A511DE2663300258B2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BF3A501DE2663300258B2B /* AppDelegate.swift */; };
-		C6BF3A531DE2663300258B2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BF3A521DE2663300258B2B /* ViewController.swift */; };
-		C6BF3A561DE2663300258B2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BF3A541DE2663300258B2B /* Main.storyboard */; };
 		C6BF3A581DE2663300258B2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BF3A571DE2663300258B2B /* Assets.xcassets */; };
 		C6BF3A5B1DE2663300258B2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BF3A591DE2663300258B2B /* LaunchScreen.storyboard */; };
 		C6BF3A661DE2663300258B2B /* Speak_NumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BF3A651DE2663300258B2B /* Speak_NumberTests.swift */; };
 		C6BF3A711DE2663300258B2B /* Speak_NumberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BF3A701DE2663300258B2B /* Speak_NumberUITests.swift */; };
+		C6BF3A801DE2665B00258B2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BF3A7E1DE2665B00258B2B /* ViewController.swift */; };
+		C6BF3A831DE27A5F00258B2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BF3A821DE27A5F00258B2B /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,6 @@
 /* Begin PBXFileReference section */
 		C6BF3A4D1DE2663300258B2B /* Speak Number.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speak Number.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BF3A501DE2663300258B2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C6BF3A521DE2663300258B2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C6BF3A551DE2663300258B2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6BF3A571DE2663300258B2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6BF3A5A1DE2663300258B2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6BF3A5C1DE2663300258B2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +45,8 @@
 		C6BF3A6C1DE2663300258B2B /* Speak NumberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Speak NumberUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BF3A701DE2663300258B2B /* Speak_NumberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speak_NumberUITests.swift; sourceTree = "<group>"; };
 		C6BF3A721DE2663300258B2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6BF3A7E1DE2665B00258B2B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6BF3A821DE27A5F00258B2B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				C6BF3A501DE2663300258B2B /* AppDelegate.swift */,
-				C6BF3A521DE2663300258B2B /* ViewController.swift */,
-				C6BF3A541DE2663300258B2B /* Main.storyboard */,
+				C6BF3A7E1DE2665B00258B2B /* ViewController.swift */,
+				C6BF3A821DE27A5F00258B2B /* Main.storyboard */,
 				C6BF3A571DE2663300258B2B /* Assets.xcassets */,
 				C6BF3A591DE2663300258B2B /* LaunchScreen.storyboard */,
 				C6BF3A5C1DE2663300258B2B /* Info.plist */,
@@ -195,6 +195,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = XTK9Z4R9PW;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					C6BF3A601DE2663300258B2B = {
 						CreatedOnToolsVersion = 8.1;
@@ -235,9 +240,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6BF3A831DE27A5F00258B2B /* Main.storyboard in Resources */,
 				C6BF3A5B1DE2663300258B2B /* LaunchScreen.storyboard in Resources */,
 				C6BF3A581DE2663300258B2B /* Assets.xcassets in Resources */,
-				C6BF3A561DE2663300258B2B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6BF3A531DE2663300258B2B /* ViewController.swift in Sources */,
+				C6BF3A801DE2665B00258B2B /* ViewController.swift in Sources */,
 				C6BF3A511DE2663300258B2B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,14 +304,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C6BF3A541DE2663300258B2B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C6BF3A551DE2663300258B2B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C6BF3A591DE2663300258B2B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -418,7 +415,7 @@
 				DEVELOPMENT_TEAM = XTK9Z4R9PW;
 				INFOPLIST_FILE = "Speak Number/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "dvapps.Speak-Number";
+				PRODUCT_BUNDLE_IDENTIFIER = "dvapps.Speak-Token-Number";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -431,7 +428,7 @@
 				DEVELOPMENT_TEAM = XTK9Z4R9PW;
 				INFOPLIST_FILE = "Speak Number/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "dvapps.Speak-Number";
+				PRODUCT_BUNDLE_IDENTIFIER = "dvapps.Speak-Token-Number";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
