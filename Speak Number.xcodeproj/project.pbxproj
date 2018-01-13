@@ -193,7 +193,7 @@
 				TargetAttributes = {
 					C6BF3A4C1DE2663300258B2B = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = XTK9Z4R9PW;
+						DevelopmentTeam = 69CCTWATAF;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -412,10 +412,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XTK9Z4R9PW;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 69CCTWATAF;
 				INFOPLIST_FILE = "Speak Number/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "dvapps.Speak-Token-Number";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dvApps.SpeakNumber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -425,10 +426,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XTK9Z4R9PW;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 69CCTWATAF;
 				INFOPLIST_FILE = "Speak Number/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "dvapps.Speak-Token-Number";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dvApps.SpeakNumber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -511,6 +513,7 @@
 				C6BF3A771DE2663300258B2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6BF3A781DE2663300258B2B /* Build configuration list for PBXNativeTarget "Speak NumberTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +522,7 @@
 				C6BF3A7A1DE2663300258B2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6BF3A7B1DE2663300258B2B /* Build configuration list for PBXNativeTarget "Speak NumberUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +531,7 @@
 				C6BF3A7D1DE2663300258B2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
